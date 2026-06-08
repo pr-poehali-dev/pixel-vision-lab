@@ -7,10 +7,10 @@ export function MobileMenu() {
   const [open, setOpen] = useState(false)
 
   const menuItems = [
-    { href: "#about", label: "О нас" },
-    { href: "#services", label: "Услуги" },
-    { href: "#portfolio", label: "Портфолио" },
-    { href: "#pricing", label: "Тарифы" },
+    { href: "#about", label: "О проекте" },
+    { href: "#services", label: "Жанры" },
+    { href: "#portfolio", label: "Артисты" },
+    { href: "#pricing", label: "Топ чарты" },
     { href: "#contact", label: "Контакты" },
   ]
 

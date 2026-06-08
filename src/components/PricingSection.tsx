@@ -1,42 +1,41 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Check } from "lucide-react"
-import { QuoteFormDialog } from "@/components/QuoteFormDialog"
+import { Badge } from "@/components/ui/badge"
 
-const pricingTiers = [
+const charts = [
   {
-    name: "Базовый",
-    price: "99 900",
-    features: [
-      "До 5 страниц",
-      "Адаптивный дизайн",
-      "Базовая SEO-оптимизация",
-      "Форма обратной связи",
-      "1 месяц поддержки",
+    name: "🔥 Всех времён",
+    description: "Абсолютные легенды",
+    items: [
+      "Eminem — The Marshall Mathers LP",
+      "Kendrick Lamar — To Pimp a Butterfly",
+      "Kanye West — My Beautiful Dark Twisted Fantasy",
+      "Drake — Take Care",
+      "50 Cent — Get Rich or Die Tryin'",
     ],
     highlighted: false,
   },
   {
-    name: "Про",
-    price: "249 900",
-    features: [
-      "До 15 страниц",
-      "Премиум-дизайн",
-      "Расширенная SEO-оптимизация",
-      "Интеграция CMS",
-      "Функционал e-commerce",
-      "3 месяца поддержки",
+    name: "⚡ Прямо сейчас",
+    description: "Горячие релизы 2024–2025",
+    items: [
+      "Kendrick Lamar — GNX",
+      "Travis Scott — Utopia",
+      "Ken Carson — A Great Chaos",
+      "Playboi Carti — MUSIC",
+      "MAYOT — новый альбом",
     ],
     highlighted: true,
   },
   {
-    name: "Индивидуальный",
-    price: "По запросу",
-    features: [
-      "Неограниченно страниц",
-      "Кастомный функционал",
-      "API-интеграции",
-      "Персональный менеджер",
-      "6 месяцев поддержки",
+    name: "🇷🇺 Русский рэп",
+    description: "Лучшее из СНГ",
+    items: [
+      "Платина — Холодно",
+      "Kai Angel — ANGEL",
+      "Yanix — Нарисуй",
+      "9mice — Розовый туман",
+      "Bushido Zho — Катана",
     ],
     highlighted: false,
   },
@@ -57,63 +56,44 @@ export function PricingSection() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
             </span>
-            Прозрачные цены
+            Чарты RapVault
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-balance">
-            Выберите <span className="text-primary">идеальный тариф</span> для вашего проекта
+            Лучшие <span className="text-primary">альбомы</span> в истории
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            От стартапов до крупного бизнеса — у нас есть подходящее решение
+            Редакция RapVault выбрала ключевые релизы — от классики до свежих хитов
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {pricingTiers.map((tier, index) => (
+          {charts.map((chart, index) => (
             <Card
               key={index}
               className={`relative group ${
-                tier.highlighted
+                chart.highlighted
                   ? "border-primary shadow-xl scale-105 bg-gradient-to-b from-background to-primary/5"
                   : "hover:border-primary/50 hover:shadow-lg"
               } transition-all duration-300`}
             >
-              {tier.highlighted && (
+              {chart.highlighted && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-primary to-primary/80 text-primary-foreground px-4 py-1 rounded-full text-sm font-semibold shadow-lg">
-                  Популярный
+                  Актуально
                 </div>
               )}
-              <CardHeader className="text-center pb-8">
-                <CardTitle className="text-2xl mb-2">{tier.name}</CardTitle>
-                <div className="mt-4">
-                  <span className="text-4xl font-bold">
-                    {tier.price === "По запросу" ? (
-                      <span className="text-3xl">{tier.price}</span>
-                    ) : (
-                      <>
-                        <span className="text-lg font-normal text-muted-foreground">от </span>
-                        {tier.price}
-                        <span className="text-lg font-normal text-muted-foreground"> ₽</span>
-                      </>
-                    )}
-                  </span>
-                </div>
+              <CardHeader className="text-center pb-4">
+                <CardTitle className="text-2xl mb-1">{chart.name}</CardTitle>
+                <Badge variant="secondary" className="mx-auto w-fit">{chart.description}</Badge>
               </CardHeader>
               <CardContent>
-                <ul className="space-y-3 mb-8">
-                  {tier.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-start gap-3 group/item">
+                <ul className="space-y-3">
+                  {chart.items.map((item, itemIndex) => (
+                    <li key={itemIndex} className="flex items-start gap-3 group/item">
                       <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform" />
-                      <span className="text-sm leading-relaxed">{feature}</span>
+                      <span className="text-sm leading-relaxed">{item}</span>
                     </li>
                   ))}
                 </ul>
-                <QuoteFormDialog
-                  packageName={tier.name}
-                  variant={tier.highlighted ? "default" : "outline"}
-                  className={`w-full ${tier.highlighted ? "shadow-lg shadow-primary/20" : ""}`}
-                >
-                  {tier.price === "По запросу" ? "Связаться с нами" : "Выбрать тариф"}
-                </QuoteFormDialog>
               </CardContent>
             </Card>
           ))}
@@ -121,8 +101,7 @@ export function PricingSection() {
 
         <div className="mt-12 text-center">
           <p className="text-sm text-muted-foreground">
-            Все тарифы включают <span className="text-primary font-semibold">бесплатную настройку хостинга</span> и{" "}
-            <span className="text-primary font-semibold">SSL-сертификат</span>
+            Список пополняется с каждым <span className="text-primary font-semibold">новым релизом</span> — следите за обновлениями
           </p>
         </div>
       </div>

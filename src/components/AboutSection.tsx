@@ -1,20 +1,20 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle2, Sparkles } from "lucide-react"
 
-const values = [
-  { title: "Качество", description: "Высококлассные решения, соответствующие самым высоким стандартам" },
-  { title: "Доступность", description: "Профессиональные сайты по честным и прозрачным ценам" },
-  { title: "Прозрачность", description: "Четкая коммуникация без скрытых платежей" },
-  { title: "Клиентоориентированность", description: "Ваши цели и пожелания всегда в приоритете" },
-  { title: "Масштабируемость", description: "Сайты, которые растут вместе с вашим бизнесом" },
-  { title: "Гибкость", description: "Быстрая адаптация под меняющиеся потребности" },
+const features = [
+  { title: "Биографии", description: "Подробные истории жизни каждого артиста — от истоков до мирового признания" },
+  { title: "Дискография", description: "Полные каталоги альбомов, EP и микстейпов с описанием каждого релиза" },
+  { title: "Достижения", description: "Grammy, Billboard, стриминговые рекорды и культурное влияние" },
+  { title: "Цитаты", description: "Самые запоминающиеся строчки и высказывания любимых артистов" },
+  { title: "Коллаборации", description: "История совместных треков и творческих союзов между артистами" },
+  { title: "Русский рэп", description: "Отдельное внимание к русскоязычным исполнителям и их влиянию" },
 ]
 
 const stats = [
-  { number: "50+", label: "Проектов" },
-  { number: "45+", label: "Довольных клиентов" },
-  { number: "30+", label: "Созданных логотипов" },
-  { number: "3+", label: "Года опыта" },
+  { number: "30+", label: "Артистов" },
+  { number: "200+", label: "Альбомов" },
+  { number: "2", label: "Страны" },
+  { number: "∞", label: "Треков" },
 ]
 
 export function AboutSection() {
@@ -27,24 +27,24 @@ export function AboutSection() {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold">
             <Sparkles className="h-4 w-4" />
-            О CodeCraft
+            О RapVault
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-balance">
-            Качество, которое{" "}
+            Всё о рэпе в{" "}
             <span className="text-primary relative">
-              впечатляет
+              одном месте
               <svg className="absolute -bottom-2 left-0 w-full" height="8" viewBox="0 0 200 8" fill="none">
                 <path d="M0 4C50 2 150 6 200 4" stroke="currentColor" strokeWidth="2" className="text-primary" />
               </svg>
             </span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
-            Создание сайта не должно быть дорогим. Мы разрабатываем индивидуальные решения, которые идеально соответствуют пожеланиям каждого клиента.
+            RapVault — энциклопедия рэп-культуры. Здесь вы найдёте всё: от биографий легенд вроде Eminem и Kendrick Lamar до новой волны артистов — Nettspend, 9mice и Fakemink.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-          {values.map((value, index) => (
+          {features.map((feature, index) => (
             <Card
               key={index}
               className="border-none shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group"
@@ -54,9 +54,9 @@ export function AboutSection() {
                   <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0 mt-1 group-hover:scale-110 transition-transform" />
                   <div>
                     <h3 className="font-semibold text-lg mb-2 group-hover:text-primary transition-colors">
-                      {value.title}
+                      {feature.title}
                     </h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">{value.description}</p>
+                    <p className="text-muted-foreground text-sm leading-relaxed">{feature.description}</p>
                   </div>
                 </div>
               </CardContent>

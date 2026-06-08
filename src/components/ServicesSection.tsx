@@ -1,42 +1,42 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Layout, Palette, Code, Share2, Target, Search } from "lucide-react"
+import Icon from "@/components/ui/icon"
 
-const services = [
+const genres = [
   {
-    icon: Layout,
-    title: "Веб-дизайн",
+    icon: "Flame",
+    title: "Trap",
     description:
-      "Мы создаем сайты, которые не только визуально привлекательны, но и функциональны, удобны в использовании. В CodeCraft ваш бренд в центре внимания — мы обеспечиваем соответствие онлайн-присутствия целям и ценностям вашего бизнеса.",
+      "Тяжёлые 808-басы, хай-хэты и мрачная атмосфера. Trap зародился на Юге США и захватил весь мир. Travis Scott, Playboi Carti, 21 Savage — главные имена жанра.",
   },
   {
-    icon: Palette,
-    title: "Графический дизайн",
+    icon: "Crown",
+    title: "Хип-хоп классика",
     description:
-      "От логотипов до постов в соцсетях — мы создаем креативные графические решения, усиливающие ваш бренд. Наши дизайны уникальны и профессиональны, производя нужное впечатление на целевую аудиторию.",
+      "Фундамент рэп-культуры. Сэмплы, битбокс и острые тексты. Eminem, 50 Cent, Kanye West — те, кто сделал хип-хоп мировым явлением.",
   },
   {
-    icon: Code,
-    title: "Веб-разработка",
+    icon: "Zap",
+    title: "Cloud rap",
     description:
-      "Мы создаем технически надежные и перспективные сайты. Наша команда обеспечивает надежность, масштабируемость и скорость, помогая вашему бизнесу расти в цифровом пространстве.",
+      "Мечтательные биты, размытая эстетика и меланхоличные тексты. Lil Uzi Vert, XXXTentacion — пионеры жанра, изменившие звучание нового поколения.",
   },
   {
-    icon: Share2,
-    title: "Соцсети",
+    icon: "Globe",
+    title: "Русский рэп",
     description:
-      "Сильное присутствие в социальных сетях сегодня решает многое. Мы поможем создать впечатление с помощью привлекательных визуалов и эффективных стратегий, чтобы ваш бренд оставался заметным.",
+      "От уличного андерграунда до стадионов. Янix, Платина, Bushido Zho, Скally Milano — русскоязычный рэп завоевал миллионы слушателей.",
   },
   {
-    icon: Target,
-    title: "Результат",
+    icon: "Music",
+    title: "Hyperpop / DIY",
     description:
-      "В CodeCraft мы нацелены на успех. Наш подход всегда направлен на достижение измеримых результатов, способствующих росту вашего бизнеса. Вместе находим то, что действительно работает.",
+      "Экспериментальный звук нового поколения. Nettspend, 2hollis, OG Buda, Ken Carson — молодые артисты, ломающие все жанровые границы.",
   },
   {
-    icon: Search,
-    title: "SEO",
+    icon: "Star",
+    title: "Alternative rap",
     description:
-      "Видимость в поиске критически важна. Мы оптимизируем сайт с применением современных SEO-техник, чтобы вы были выше в Google и целевая аудитория легко вас находила.",
+      "Tyler, the Creator, Kendrick Lamar — рэп как высокое искусство. Концептуальные альбомы, сложные нарративы и неповторимая эстетика.",
   },
 ]
 
@@ -47,28 +47,28 @@ export function ServicesSection() {
 
       <div className="container mx-auto max-w-7xl relative z-10">
         <div className="inline-block mb-4 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold mx-auto block w-fit">
-          Наша экспертиза
+          Жанры и направления
         </div>
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-4 text-balance">
-          В чем мы <span className="text-primary">сильны</span>
+          Вселенная <span className="text-primary">рэп-культуры</span>
         </h2>
         <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto text-pretty leading-relaxed text-lg">
-          От концепции до запуска — мы трансформируем ваши цифровые амбиции в мощные онлайн-решения, приносящие результат.
+          От классического хип-хопа до современного hyperpop — здесь собраны все ключевые жанры и их главные представители.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((service, index) => (
+          {genres.map((genre, index) => (
             <Card
               key={index}
               className="group hover:border-primary transition-all duration-300 hover:shadow-xl hover:-translate-y-2 bg-background/50 backdrop-blur-sm"
             >
               <CardHeader>
                 <div className="mb-4 inline-flex p-3 rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
-                  <service.icon className="h-6 w-6" />
+                  <Icon name={genre.icon} fallback="Music" className="h-6 w-6" />
                 </div>
-                <CardTitle className="text-xl group-hover:text-primary transition-colors">{service.title}</CardTitle>
+                <CardTitle className="text-xl group-hover:text-primary transition-colors">{genre.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription className="text-base leading-relaxed">{service.description}</CardDescription>
+                <CardDescription className="text-base leading-relaxed">{genre.description}</CardDescription>
               </CardContent>
             </Card>
           ))}

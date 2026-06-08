@@ -4,20 +4,19 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Mail, Phone, MapPin, Send } from "lucide-react"
+import { Mail, Music, Send } from "lucide-react"
 
 export function ContactSection() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phone: "",
+    artist: "",
     message: "",
   })
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    console.log("[v0] Form submitted:", formData)
-    // Handle form submission
+    console.log("[RapVault] Suggestion submitted:", formData)
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -35,13 +34,13 @@ export function ContactSection() {
       <div className="container mx-auto max-w-7xl relative z-10">
         <div className="text-center mb-16">
           <div className="inline-block mb-4 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold">
-            Контакты
+            Сообщество
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-balance">
-            Давайте <span className="text-primary">создавать вместе</span>
+            Кого мы <span className="text-primary">пропустили?</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
-            Готовы воплотить ваши цифровые амбиции? Свяжитесь с нами без обязательств и узнайте, чем мы можем помочь.
+            Знаешь крутого артиста, которого нет в каталоге? Предложи его — мы добавим лучших.
           </p>
         </div>
 
@@ -49,21 +48,21 @@ export function ContactSection() {
           <div className="lg:col-span-2">
             <Card className="border-none shadow-xl bg-background">
               <CardHeader>
-                <CardTitle className="text-2xl">Напишите нам</CardTitle>
+                <CardTitle className="text-2xl">Предложить артиста</CardTitle>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <label htmlFor="name" className="text-sm font-medium">
-                        Имя *
+                        Твоё имя *
                       </label>
                       <Input
                         id="name"
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
-                        placeholder="Ваше имя"
+                        placeholder="Как тебя зовут?"
                         required
                         className="transition-all focus:scale-[1.02]"
                       />
@@ -85,37 +84,36 @@ export function ContactSection() {
                     </div>
                   </div>
                   <div className="space-y-2">
-                    <label htmlFor="phone" className="text-sm font-medium">
-                      Телефон
+                    <label htmlFor="artist" className="text-sm font-medium">
+                      Артист *
                     </label>
                     <Input
-                      id="phone"
-                      name="phone"
-                      type="tel"
-                      value={formData.phone}
+                      id="artist"
+                      name="artist"
+                      value={formData.artist}
                       onChange={handleChange}
-                      placeholder="+7 900 123-45-67"
+                      placeholder="Например: Lil Peep, Bones, Boulevard Depo..."
+                      required
                       className="transition-all focus:scale-[1.02]"
                     />
                   </div>
                   <div className="space-y-2">
                     <label htmlFor="message" className="text-sm font-medium">
-                      Сообщение *
+                      Почему он заслуживает быть в каталоге?
                     </label>
                     <Textarea
                       id="message"
                       name="message"
                       value={formData.message}
                       onChange={handleChange}
-                      placeholder="Расскажите о вашем проекте..."
-                      rows={6}
-                      required
+                      placeholder="Расскажи немного об артисте — жанр, альбомы, почему он важен..."
+                      rows={5}
                       className="transition-all focus:scale-[1.02]"
                     />
                   </div>
                   <Button type="submit" size="lg" className="w-full sm:w-auto group">
                     <Send className="mr-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                    Отправить
+                    Предложить
                   </Button>
                 </form>
               </CardContent>
@@ -130,8 +128,8 @@ export function ContactSection() {
                     <Mail className="h-5 w-5" />
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-1">E-mail</h3>
-                    <p className="text-sm text-muted-foreground">hello@example.com</p>
+                    <h3 className="font-semibold mb-1">Написать нам</h3>
+                    <p className="text-sm text-muted-foreground">info@rapvault.ru</p>
                   </div>
                 </div>
               </CardContent>
@@ -141,30 +139,24 @@ export function ContactSection() {
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
                   <div className="p-3 rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300 group-hover:scale-110">
-                    <Phone className="h-5 w-5" />
+                    <Music className="h-5 w-5" />
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-1">Телефон</h3>
-                    <p className="text-sm text-muted-foreground">+7 900 123-45-67</p>
+                    <h3 className="font-semibold mb-1">В каталоге уже</h3>
+                    <p className="text-sm text-muted-foreground">30 артистов из разных стран и эпох</p>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
+            <Card className="border-none shadow-lg bg-gradient-to-br from-primary/10 to-primary/5 border-primary/20">
               <CardContent className="p-6">
-                <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300 group-hover:scale-110">
-                    <MapPin className="h-5 w-5" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold mb-1">Время работы</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Пн - Пт: 9:00 - 18:00
-                      <br />
-                      Выходные: по договоренности
-                    </p>
-                  </div>
+                <h3 className="font-semibold mb-2 text-primary">🎤 Статистика</h3>
+                <div className="space-y-2 text-sm text-muted-foreground">
+                  <p>🇺🇸 США — 18 артистов</p>
+                  <p>🇷🇺 Россия — 13 артистов</p>
+                  <p>🇨🇦 Канада — 1 артист</p>
+                  <p>🇬🇧 Великобритания — 1 артист</p>
                 </div>
               </CardContent>
             </Card>
