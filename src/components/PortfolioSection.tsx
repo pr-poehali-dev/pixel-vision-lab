@@ -234,7 +234,7 @@ const rappers = [
     albums: ["Дорогой", "Нарисуй", "Лайтер"],
     color: "from-blue-600/20",
     emoji: "❄️",
-    photo: null,
+    photo: "https://avatars.yandex.net/get-music-content/119639/0b8e7262.p.4462686/400x400",
   },
   {
     name: "Платина",
@@ -245,7 +245,7 @@ const rappers = [
     albums: ["Платина", "Холодно"],
     color: "from-zinc-500/20",
     emoji: "🔱",
-    photo: null,
+    photo: "https://avatars.yandex.net/get-music-content/10126140/0d15f6fd.p.6531894/400x400",
   },
   {
     name: "Scally Milano",
@@ -256,7 +256,7 @@ const rappers = [
     albums: ["Milano"],
     color: "from-indigo-500/20",
     emoji: "🎯",
-    photo: null,
+    photo: "https://avatars.yandex.net/get-music-content/15042045/9f43ee5d.p.10065389/400x400",
   },
   {
     name: "Kai Angel",
@@ -267,7 +267,7 @@ const rappers = [
     albums: ["boy_in_a_dream", "ANGEL"],
     color: "from-rose-400/20",
     emoji: "👼",
-    photo: null,
+    photo: "https://avatars.yandex.net/get-music-content/14854709/523c6d4f.p.16509384/400x400",
   },
   {
     name: "9mice",
@@ -278,7 +278,7 @@ const rappers = [
     albums: ["Розовый туман", "Мышиная возня"],
     color: "from-fuchsia-400/20",
     emoji: "🐭",
-    photo: null,
+    photo: "https://avatars.yandex.net/get-music-content/17696724/22edf7c6.p.13739916/400x400",
   },
   {
     name: "MAYOT",
@@ -289,7 +289,7 @@ const rappers = [
     albums: ["MAYOT"],
     color: "from-yellow-600/20",
     emoji: "🌙",
-    photo: null,
+    photo: "https://avatars.yandex.net/get-music-content/17696724/e368e43f.p.6312364/400x400",
   },
   {
     name: "OG Buda",
@@ -300,7 +300,7 @@ const rappers = [
     albums: ["BUDA"],
     color: "from-amber-700/20",
     emoji: "🔮",
-    photo: null,
+    photo: "https://avatars.yandex.net/get-music-content/16508792/c904a679.p.5880813/400x400",
   },
   {
     name: "OsamaSom",
@@ -322,7 +322,7 @@ const rappers = [
     albums: ["Цапля"],
     color: "from-sky-600/20",
     emoji: "🦢",
-    photo: null,
+    photo: "https://avatars.yandex.net/get-music-content/16508792/5aa7d10d.p.7883696/400x400",
   },
   {
     name: "Егор Крид",
@@ -333,7 +333,7 @@ const rappers = [
     albums: ["Крид", "Холостяк", "#selfie"],
     color: "from-blue-400/20",
     emoji: "💙",
-    photo: null,
+    photo: "https://avatars.yandex.net/get-music-content/17655650/aef97cec.p.796797/400x400",
   },
 ]
 
