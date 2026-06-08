@@ -14,6 +14,7 @@ const rappers = [
     albums: ["Thank Me Later", "Take Care", "Nothing Was the Same", "Views", "Certified Lover Boy", "For All The Dogs"],
     color: "from-yellow-500/20",
     emoji: "👑",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Drake_at_The_Carter_Effect_2017_%2836818935200%29_%28cropped%29.jpg/500px-Drake_at_The_Carter_Effect_2017_%2836818935200%29_%28cropped%29.jpg",
   },
   {
     name: "Kendrick Lamar",
@@ -24,6 +25,7 @@ const rappers = [
     albums: ["good kid, m.A.A.d city", "To Pimp a Butterfly", "DAMN.", "Mr. Morale & The Big Steppers"],
     color: "from-blue-500/20",
     emoji: "🏆",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/KendrickSZASPurs230725-144_%28cropped%29_desaturated.jpg/500px-KendrickSZASPurs230725-144_%28cropped%29_desaturated.jpg",
   },
   {
     name: "Eminem",
@@ -34,6 +36,7 @@ const rappers = [
     albums: ["The Slim Shady LP", "The Marshall Mathers LP", "The Eminem Show", "Recovery", "The Death of Slim Shady"],
     color: "from-gray-500/20",
     emoji: "💀",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Eminem_2021_Color_Corrected.jpg/500px-Eminem_2021_Color_Corrected.jpg",
   },
   {
     name: "Travis Scott",
@@ -44,6 +47,7 @@ const rappers = [
     albums: ["Rodeo", "Birds in the Trap Sing McKnight", "Astroworld", "Utopia"],
     color: "from-orange-500/20",
     emoji: "🚀",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/2025-0120_Cole_Gahagan_Michael_Rubin_Travis_Scott_%28cropped%29.jpg/500px-2025-0120_Cole_Gahagan_Michael_Rubin_Travis_Scott_%28cropped%29.jpg",
   },
   {
     name: "Kanye West",
@@ -54,6 +58,7 @@ const rappers = [
     albums: ["The College Dropout", "Late Registration", "Graduation", "My Beautiful Dark Twisted Fantasy", "Donda"],
     color: "from-red-500/20",
     emoji: "🎹",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Kanye_West_at_the_2009_Tribeca_Film_Festival_%28crop_2%29.jpg/500px-Kanye_West_at_the_2009_Tribeca_Film_Festival_%28crop_2%29.jpg",
   },
   {
     name: "Tyler, the Creator",
@@ -64,6 +69,7 @@ const rappers = [
     albums: ["Goblin", "Wolf", "Cherry Bomb", "Flower Boy", "IGOR", "Call Me If You Get Lost"],
     color: "from-green-500/20",
     emoji: "🌸",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Tyler_The_Creator_Toronto_2025_%28cropped%29.jpg/500px-Tyler_The_Creator_Toronto_2025_%28cropped%29.jpg",
   },
   {
     name: "XXXTentacion",
@@ -74,16 +80,18 @@ const rappers = [
     albums: ["17", "?", "Skins", "Bad Vibes Forever"],
     color: "from-purple-500/20",
     emoji: "🖤",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Xxxtentacion_%28cropped%29.jpg/500px-Xxxtentacion_%28cropped%29.jpg",
   },
   {
     name: "Playboi Carti",
     country: "🇺🇸 США",
     genre: "Trap / Experimental",
     era: "2010-е — наши дни",
-    bio: "Культовый артист Atlants с минималистичными текстами и максималистичными битами. Whole Lotta Red и Die Lit — библия современного trap-андерграунда.",
+    bio: "Культовый артист Атланты с минималистичными текстами и максималистичными битами. Whole Lotta Red и Die Lit — библия современного trap-андерграунда.",
     albums: ["Playboi Carti", "Die Lit", "Whole Lotta Red"],
     color: "from-red-900/20",
     emoji: "🩸",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Playboi_Carti%2C_Clout_Festival_2024_05_%28cropped%29.jpg/500px-Playboi_Carti%2C_Clout_Festival_2024_05_%28cropped%29.jpg",
   },
   {
     name: "Lil Uzi Vert",
@@ -94,16 +102,18 @@ const rappers = [
     albums: ["Luv Is Rage", "Luv Is Rage 2", "Eternal Atake", "Pink Tape"],
     color: "from-pink-500/20",
     emoji: "💎",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Lil_Uzi_Vert_%282018%29.png/500px-Lil_Uzi_Vert_%282018%29.png",
   },
   {
     name: "21 Savage",
     country: "🇬🇧🇺🇸 Великобритания / США",
     genre: "Trap",
     era: "2010-е — наши дни",
-    bio: "Выходец из Лондона, выросший в Атланте. Сдержанная подача и холодные тексты о жизни на улице. Iero — один из лучших trap-альбомов десятилетия.",
+    bio: "Выходец из Лондона, выросший в Атланте. Сдержанная подача и холодные тексты о жизни на улице. Savage Mode — один из лучших trap-альбомов десятилетия.",
     albums: ["Savage Mode", "Without Warning", "I Am > I Was", "Savage Mode II"],
     color: "from-slate-500/20",
     emoji: "🗡️",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/21_Savage_2018.jpg/500px-21_Savage_2018.jpg",
   },
   {
     name: "50 Cent",
@@ -114,6 +124,7 @@ const rappers = [
     albums: ["Get Rich or Die Tryin'", "The Massacre", "Curtis", "Before I Self Destruct"],
     color: "from-amber-500/20",
     emoji: "💰",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Curtis_%2250_Cent%22_Jackson_visits_Barksdale_AFB_%285%29_%28cropped%29.jpg/500px-Curtis_%2250_Cent%22_Jackson_visits_Barksdale_AFB_%285%29_%28cropped%29.jpg",
   },
   {
     name: "Ken Carson",
@@ -124,6 +135,7 @@ const rappers = [
     albums: ["X", "A Great Chaos"],
     color: "from-violet-500/20",
     emoji: "⚡",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/8/80/Ken_Carson_live_on_Chaos_Tour_at_Milwaukee_2024_%28cropped%29.jpg",
   },
   {
     name: "Destroy Lonely",
@@ -134,6 +146,7 @@ const rappers = [
     albums: ["NO STYLIST", "If Looks Could Kill"],
     color: "from-cyan-500/20",
     emoji: "🌀",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Destroy_Lonely_at_his_afterparty_in_Orlando%2C_shot_by_tristanstlws.jpg/500px-Destroy_Lonely_at_his_afterparty_in_Orlando%2C_shot_by_tristanstlws.jpg",
   },
   {
     name: "Young Thug",
@@ -144,126 +157,7 @@ const rappers = [
     albums: ["Barter 6", "Beautiful Thugger Girls", "So Much Fun", "Punk"],
     color: "from-lime-500/20",
     emoji: "🦋",
-  },
-  {
-    name: "Yanix",
-    country: "🇷🇺 Россия",
-    genre: "Русский рэп",
-    era: "2010-е — наши дни",
-    bio: "Один из пионеров современного русского рэпа. Автор культовых треков об уличной жизни, дружбе и Сибири. Голос целого поколения российских слушателей.",
-    albums: ["Дорогой", "Нарисуй", "Лайтер"],
-    color: "from-blue-600/20",
-    emoji: "❄️",
-  },
-  {
-    name: "Платина",
-    country: "🇷🇺 Россия",
-    genre: "Русский рэп / Trap",
-    era: "2010-е — наши дни",
-    bio: "Московский рэпер с европейским звуком и русской душой. Известен коллаборациями с лучшими продюсерами СНГ и уникальным мрачным стилем.",
-    albums: ["Платина", "Холодно"],
-    color: "from-zinc-500/20",
-    emoji: "🔱",
-  },
-  {
-    name: "Bushido Zho",
-    country: "🇷🇺 Россия",
-    genre: "Русский рэп",
-    era: "2010-е — наши дни",
-    bio: "Уличный поэт из России с резким слогом и острой социальной критикой. Его тексты — срез жизни русскоязычной молодёжи без прикрас.",
-    albums: ["Катана", "Последний самурай"],
-    color: "from-red-800/20",
-    emoji: "⚔️",
-  },
-  {
-    name: "Scally Milano",
-    country: "🇷🇺 Россия",
-    genre: "Русский рэп / Drill",
-    era: "2020-е — наши дни",
-    bio: "Молодой артист с дрилловым звуком и влиянием западной культуры. Один из ярчайших представителей нового поколения русского рэпа.",
-    albums: ["Milano"],
-    color: "from-indigo-500/20",
-    emoji: "🎯",
-  },
-  {
-    name: "Kai Angel",
-    country: "🇷🇺 Россия",
-    genre: "Русский рэп / Hyperpop",
-    era: "2020-е — наши дни",
-    bio: "Андрогинный артист, разрушающий гендерные стереотипы в русской музыке. Смешивает hyperpop, трэп и электронику в уникальный нежный саунд.",
-    albums: ["boy_in_a_dream", "ANGEL"],
-    color: "from-rose-400/20",
-    emoji: "👼",
-  },
-  {
-    name: "9mice",
-    country: "🇷🇺 Россия",
-    genre: "Indie Pop / Рэп",
-    era: "2020-е — наши дни",
-    bio: "Питерская артистка, сочетающая лирику, нежность и чувственность. Её тексты — дневник поколения, выросшего в интернете.",
-    albums: ["Розовый туман", "Мышиная возня"],
-    color: "from-fuchsia-400/20",
-    emoji: "🐭",
-  },
-  {
-    name: "Fakemink",
-    country: "🇷🇺 Россия",
-    genre: "Русский рэп",
-    era: "2020-е — наши дни",
-    bio: "Андерграундный артист с культовым статусом среди знатоков. Ценится за честность текстов, сырой звук и отказ от коммерческих компромиссов.",
-    albums: ["Норка"],
-    color: "from-teal-500/20",
-    emoji: "🦦",
-  },
-  {
-    name: "MAYOT",
-    country: "🇷🇺 Россия",
-    genre: "Русский рэп / Trap",
-    era: "2020-е — наши дни",
-    bio: "Молодой казанский рэпер, покоривший русский TikTok и стриминги. Мелодичный трэп с узнаваемым голосом и прямыми текстами о молодости.",
-    albums: ["MAYOT"],
-    color: "from-yellow-600/20",
-    emoji: "🌙",
-  },
-  {
-    name: "Heronwater",
-    country: "🇷🇺 Россия",
-    genre: "Русский рэп / Lo-fi",
-    era: "2020-е — наши дни",
-    bio: "Атмосферный артист с lo-fi эстетикой и меланхоличными текстами. Музыка для ночных прогулок и осенних дождей.",
-    albums: ["Цапля"],
-    color: "from-sky-600/20",
-    emoji: "🦢",
-  },
-  {
-    name: "prettifun",
-    country: "🇷🇺 Россия",
-    genre: "Русский рэп / Hyperpop",
-    era: "2020-е — наши дни",
-    bio: "Экспериментальная артистка, смешивающая поп, hyperpop и рэп. Яркий визуальный образ и непредсказуемые релизы держат аудиторию в постоянном предвкушении.",
-    albums: ["prettifun"],
-    color: "from-pink-400/20",
-    emoji: "✨",
-  },
-  {
-    name: "Nine Vicious",
-    country: "🇷🇺 Россия",
-    genre: "Русский рэп / Drill",
-    era: "2020-е — наши дни",
-    bio: "Агрессивный дрилловый артист с холодными текстами и атмосферными битами. Представитель жёсткого андерграунда русского рэп-сцены.",
-    albums: ["Девять"],
-    color: "from-neutral-600/20",
-    emoji: "🔪",
-  },
-  {
-    name: "OsamaSom",
-    country: "🇷🇺 Россия",
-    genre: "Русский рэп",
-    era: "2020-е — наши дни",
-    bio: "Нишевый артист с верной аудиторией. Тексты об улице, деньгах и самоидентичности в стиле, впитавшем лучшее из американского трэпа.",
-    albums: ["Som"],
-    color: "from-orange-700/20",
-    emoji: "🌊",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Young_Thug_in_2021.png/500px-Young_Thug_in_2021.png",
   },
   {
     name: "Nettspend",
@@ -274,6 +168,7 @@ const rappers = [
     albums: ["ROTTING IN HEAVEN"],
     color: "from-emerald-500/20",
     emoji: "💸",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Nettspend.webp/500px-Nettspend.webp.png",
   },
   {
     name: "2hollis",
@@ -284,6 +179,117 @@ const rappers = [
     albums: ["COWBOY"],
     color: "from-stone-500/20",
     emoji: "🤠",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/2Hollis_Cover.jpg/500px-2Hollis_Cover.jpg",
+  },
+  {
+    name: "Fakemink",
+    country: "🇷🇺 Россия",
+    genre: "Русский рэп",
+    era: "2020-е — наши дни",
+    bio: "Андерграундный артист с культовым статусом среди знатоков. Ценится за честность текстов, сырой звук и отказ от коммерческих компромиссов.",
+    albums: ["Норка"],
+    color: "from-teal-500/20",
+    emoji: "🦦",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Fakemink_performing_in_London%2C_photographed_by_Teddy_Westside.jpg/500px-Fakemink_performing_in_London%2C_photographed_by_Teddy_Westside.jpg",
+  },
+  {
+    name: "Nine Vicious",
+    country: "🇷🇺 Россия",
+    genre: "Русский рэп / Drill",
+    era: "2020-е — наши дни",
+    bio: "Агрессивный дрилловый артист с холодными текстами и атмосферными битами. Представитель жёсткого андерграунда русского рэп-сцены.",
+    albums: ["Девять"],
+    color: "from-neutral-600/20",
+    emoji: "🔪",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Nine_Vicious_July_11th_2025_%28cropped%29.jpg/500px-Nine_Vicious_July_11th_2025_%28cropped%29.jpg",
+  },
+  {
+    name: "prettifun",
+    country: "🇷🇺 Россия",
+    genre: "Русский рэп / Hyperpop",
+    era: "2020-е — наши дни",
+    bio: "Экспериментальная артистка, смешивающая поп, hyperpop и рэп. Яркий визуальный образ и непредсказуемые релизы держат аудиторию в постоянном предвкушении.",
+    albums: ["prettifun"],
+    color: "from-pink-400/20",
+    emoji: "✨",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/f/f4/Prettifun.png",
+  },
+  {
+    name: "Bushido Zho",
+    country: "🇷🇺 Россия",
+    genre: "Русский рэп",
+    era: "2010-е — наши дни",
+    bio: "Уличный поэт из России с резким слогом и острой социальной критикой. Его тексты — срез жизни русскоязычной молодёжи без прикрас.",
+    albums: ["Катана", "Последний самурай"],
+    color: "from-red-800/20",
+    emoji: "⚔️",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Bushido_Zho_2024.jpg/500px-Bushido_Zho_2024.jpg",
+  },
+  {
+    name: "Yanix",
+    country: "🇷🇺 Россия",
+    genre: "Русский рэп",
+    era: "2010-е — наши дни",
+    bio: "Один из пионеров современного русского рэпа. Автор культовых треков об уличной жизни, дружбе и Сибири. Голос целого поколения российских слушателей.",
+    albums: ["Дорогой", "Нарисуй", "Лайтер"],
+    color: "from-blue-600/20",
+    emoji: "❄️",
+    photo: null,
+  },
+  {
+    name: "Платина",
+    country: "🇷🇺 Россия",
+    genre: "Русский рэп / Trap",
+    era: "2010-е — наши дни",
+    bio: "Московский рэпер с европейским звуком и русской душой. Известен коллаборациями с лучшими продюсерами СНГ и уникальным мрачным стилем.",
+    albums: ["Платина", "Холодно"],
+    color: "from-zinc-500/20",
+    emoji: "🔱",
+    photo: null,
+  },
+  {
+    name: "Scally Milano",
+    country: "🇷🇺 Россия",
+    genre: "Русский рэп / Drill",
+    era: "2020-е — наши дни",
+    bio: "Молодой артист с дрилловым звуком и влиянием западной культуры. Один из ярчайших представителей нового поколения русского рэпа.",
+    albums: ["Milano"],
+    color: "from-indigo-500/20",
+    emoji: "🎯",
+    photo: null,
+  },
+  {
+    name: "Kai Angel",
+    country: "🇷🇺 Россия",
+    genre: "Русский рэп / Hyperpop",
+    era: "2020-е — наши дни",
+    bio: "Андрогинный артист, разрушающий гендерные стереотипы в русской музыке. Смешивает hyperpop, трэп и электронику в уникальный нежный саунд.",
+    albums: ["boy_in_a_dream", "ANGEL"],
+    color: "from-rose-400/20",
+    emoji: "👼",
+    photo: null,
+  },
+  {
+    name: "9mice",
+    country: "🇷🇺 Россия",
+    genre: "Indie Pop / Рэп",
+    era: "2020-е — наши дни",
+    bio: "Питерская артистка, сочетающая лирику, нежность и чувственность. Её тексты — дневник поколения, выросшего в интернете.",
+    albums: ["Розовый туман", "Мышиная возня"],
+    color: "from-fuchsia-400/20",
+    emoji: "🐭",
+    photo: null,
+  },
+  {
+    name: "MAYOT",
+    country: "🇷🇺 Россия",
+    genre: "Русский рэп / Trap",
+    era: "2020-е — наши дни",
+    bio: "Молодой казанский рэпер, покоривший русский TikTok и стриминги. Мелодичный трэп с узнаваемым голосом и прямыми текстами о молодости.",
+    albums: ["MAYOT"],
+    color: "from-yellow-600/20",
+    emoji: "🌙",
+    photo: null,
   },
   {
     name: "OG Buda",
@@ -294,6 +300,29 @@ const rappers = [
     albums: ["BUDA"],
     color: "from-amber-700/20",
     emoji: "🔮",
+    photo: null,
+  },
+  {
+    name: "OsamaSom",
+    country: "🇷🇺 Россия",
+    genre: "Русский рэп",
+    era: "2020-е — наши дни",
+    bio: "Нишевый артист с верной аудиторией. Тексты об улице, деньгах и самоидентичности в стиле, впитавшем лучшее из американского трэпа.",
+    albums: ["Som"],
+    color: "from-orange-700/20",
+    emoji: "🌊",
+    photo: null,
+  },
+  {
+    name: "Heronwater",
+    country: "🇷🇺 Россия",
+    genre: "Русский рэп / Lo-fi",
+    era: "2020-е — наши дни",
+    bio: "Атмосферный артист с lo-fi эстетикой и меланхоличными текстами. Музыка для ночных прогулок и осенних дождей.",
+    albums: ["Цапля"],
+    color: "from-sky-600/20",
+    emoji: "🦢",
+    photo: null,
   },
   {
     name: "Егор Крид",
@@ -304,6 +333,7 @@ const rappers = [
     albums: ["Крид", "Холостяк", "#selfie"],
     color: "from-blue-400/20",
     emoji: "💙",
+    photo: null,
   },
 ]
 
@@ -332,17 +362,33 @@ export function PortfolioSection() {
               className={`group overflow-hidden border-none shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer bg-gradient-to-br ${rapper.color} to-card`}
               onClick={() => setSelectedRapper(selectedRapper?.name === rapper.name ? null : rapper)}
             >
-              <CardContent className="p-6">
-                <div className="flex items-start justify-between mb-3">
-                  <span className="text-4xl">{rapper.emoji}</span>
-                  <Badge variant="secondary" className="text-xs">{rapper.genre}</Badge>
-                </div>
+              {/* Photo */}
+              <div className="relative w-full aspect-[4/3] overflow-hidden bg-muted">
+                {rapper.photo ? (
+                  <img
+                    src={rapper.photo}
+                    alt={rapper.name}
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-muted to-muted/50">
+                    <span className="text-7xl">{rapper.emoji}</span>
+                  </div>
+                )}
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+                <Badge className="absolute top-3 right-3 text-xs bg-background/80 text-foreground border-0 backdrop-blur-sm">
+                  {rapper.genre}
+                </Badge>
+              </div>
+
+              <CardContent className="p-5">
                 <h3 className="text-xl font-bold mb-1 group-hover:text-primary transition-colors">{rapper.name}</h3>
                 <p className="text-xs text-muted-foreground mb-3">{rapper.country} · {rapper.era}</p>
-                <p className="text-sm text-muted-foreground leading-relaxed mb-4 line-clamp-3">{rapper.bio}</p>
+                <p className="text-sm text-muted-foreground leading-relaxed mb-3 line-clamp-2">{rapper.bio}</p>
 
                 {selectedRapper?.name === rapper.name && (
-                  <div className="mt-4 pt-4 border-t border-border/50 animate-fade-in-up">
+                  <div className="mt-3 pt-3 border-t border-border/50 animate-fade-in-up">
                     <p className="text-xs font-semibold text-primary mb-2 flex items-center gap-1">
                       <Icon name="Disc3" size={12} /> Дискография
                     </p>
